@@ -1,0 +1,26 @@
+App\Tests\Cart
+ [x] getProductCartPrice return a price as float for products with a list of product with a total < 100
+ [x] getProductCartPrice return a price as float for products with a list of product with a total == 100
+ [x] getProductCartPrice return a price as float for products with a list of product with a total > 100
+
+App\Tests\Math
+ [x] is initialized with 0
+ [x] sum a list of floats with a list of positive floats
+ [x] sum a list of floats with a list of positive and negative floats
+ [x] substract a list of floats with a list of positive floats
+ [x] substract a list of floats with a list of positive and negative floats
+ [x] multiply a list of floats with a list of positive floats
+ [x] multiply a list of floats with a list of positive and negative floats
+ [x] divide a list of floats with a list of positive floats
+ [x] divide a list of floats with a list of positive and negative floats
+ [x] divide with zero
+
+App\Tests\Product
+ [x] is initialize with a price as float
+ [x] is initialize with a name as string
+
+App\Tests\Shipping
+ [x] Shipping for an amount less than 100 is 15.5
+ [x] Shipping for an amount equals to 100 is 15.0
+ [x] Shipping for an greater less than 100 is 10
+
