@@ -39,15 +39,15 @@ class CartTest extends TestCase
         ];
     }
 
-    /**
-     * @testdox getProductCartPrice return a price as float for products with
-     * @dataProvider get_products
-     */
-    public function get_product_cart_price_with_products($products, $total)
-    {
-        $cart = new Cart($products);
-
-        $this->assertSame($total, $cart->getProductCartPrice());
-        $this->assertSame($total, $cart->getProductCartPrice());
-    }
+//    /**
+//     * @testdox getProductCartPrice return a price as float for products with
+//     * @dataProvider get_products
+//     */
+//    public function get_product_cart_price_with_products($products, $total)
+//    {
+//        $cart = new Cart($products);
+//
+//        $this->assertSame($total, $cart->getProductCartPrice());
+//        $this->assertSame($total, $cart->getProductCartPrice());
+//    }
 }

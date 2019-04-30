@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e36f018-689a-4453-b4ed-ed2f21675087" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Ecommerce/CartInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ecommerce/Product.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ecommerce/ProductInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ecommerce/Shipping.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Ecommerce/ShippingInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tools/DivideByZeroException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tools/Math.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tools/MathInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/CartTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/MathTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ProductTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/ShippingTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tools/MathFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tools/MathFactoryInterface.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/CartWithMockTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results-test" beforeDir="false" afterPath="$PROJECT_DIR$/results-test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ecommerce/Cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ecommerce/Cart.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Ecommerce/Shipping.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ecommerce/Shipping.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/CartTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/CartTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,27 +23,6 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Ecommerce/Product.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/ProductTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
-              <folding>
-                <element signature="e#30#56#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Ecommerce/CartInterface.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
@@ -64,7 +35,25 @@
         <entry file="file://$PROJECT_DIR$/src/Ecommerce/Cart.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="420">
-              <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+              <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tools/MathFactoryInterface.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="30" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Tools/MathFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="17" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -81,15 +70,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Ecommerce/Shipping.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="270">
+              <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -105,19 +89,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Tools/MathInterface.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/CartTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+            <state relative-caret-position="320">
+              <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
               <folding>
                 <element signature="e#30#53#0#PHP" expanded="true" />
               </folding>
@@ -125,7 +100,36 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/MathTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="717">
+              <caret line="153" column="7" lean-forward="true" selection-start-line="153" selection-start-column="7" selection-end-line="153" selection-end-column="7" />
+              <folding>
+                <element signature="e#29#65#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/CartWithMockTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="567">
+              <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+              <folding>
+                <element signature="e#29#52#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>get_product_cart_price_with_products</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,11 +145,14 @@
         <option value="$PROJECT_DIR$/src/Ecommerce/Product.php" />
         <option value="$PROJECT_DIR$/tests/ProductTest.php" />
         <option value="$PROJECT_DIR$/src/Ecommerce/CartInterface.php" />
-        <option value="$PROJECT_DIR$/tests/CartTest.php" />
         <option value="$PROJECT_DIR$/src/Ecommerce/ShippingInterface.php" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/Cart.php" />
-        <option value="$PROJECT_DIR$/src/Ecommerce/Shipping.php" />
         <option value="$PROJECT_DIR$/tests/ShippingTest.php" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/Shipping.php" />
+        <option value="$PROJECT_DIR$/src/Tools/MathFactoryInterface.php" />
+        <option value="$PROJECT_DIR$/src/Tools/MathFactory.php" />
+        <option value="$PROJECT_DIR$/tests/CartTest.php" />
+        <option value="$PROJECT_DIR$/tests/CartWithMockTest.php" />
+        <option value="$PROJECT_DIR$/src/Ecommerce/Cart.php" />
       </list>
     </option>
   </component>
@@ -185,8 +192,7 @@
       <path value="$PROJECT_DIR$/vendor/symfony/phpunit-bridge" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1440" />
+  <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="777" />
@@ -233,6 +239,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -262,15 +269,15 @@
       <option name="presentableId" value="Default" />
       <updated>1556609123520</updated>
       <workItem from="1556609124689" duration="45000" />
-      <workItem from="1556609175224" duration="5658000" />
+      <workItem from="1556609175224" duration="11286000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5703000" />
+    <option name="totallyTimeSpent" value="11331000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="23" width="1280" height="777" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="777" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23572594" />
@@ -333,16 +340,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/MathTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2093">
-          <caret line="153" column="7" lean-forward="true" selection-start-line="153" selection-start-column="7" selection-end-line="153" selection-end-column="7" />
-          <folding>
-            <element signature="e#29#65#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ecommerce/ProductInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -374,27 +371,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/CartTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-          <folding>
-            <element signature="e#30#53#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Ecommerce/CartInterface.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/Cart.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="5" lean-forward="true" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -415,15 +395,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Ecommerce/Shipping.php">
+    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        <state relative-caret-position="375">
+          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/phpunit.xml.dist">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/Shipping.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="49" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/MathTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="717">
+          <caret line="153" column="7" lean-forward="true" selection-start-line="153" selection-start-column="7" selection-end-line="153" selection-end-column="7" />
+          <folding>
+            <element signature="e#29#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/CartTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="32" column="32" lean-forward="true" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
+          <folding>
+            <element signature="e#30#53#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tools/MathFactoryInterface.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Tools/MathFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Ecommerce/Cart.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="45" lean-forward="true" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/CartWithMockTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
+          <folding>
+            <element signature="e#29#52#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

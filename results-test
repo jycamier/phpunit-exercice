@@ -1,7 +1,7 @@
-App\Tests\Cart
- [x] getProductCartPrice return a price as float for products with a list of product with a total < 100
- [x] getProductCartPrice return a price as float for products with a list of product with a total == 100
- [x] getProductCartPrice return a price as float for products with a list of product with a total > 100
+App\Tests\CartWithMock
+ [x] getProductCartPrice return a price as float for stubed products with a list of product with a total < 100
+ [x] getProductCartPrice return a price as float for stubed products with a list of product with a total == 100
+ [x] getProductCartPrice return a price as float for stubed products with a list of product with a total > 100
 
 App\Tests\Math
  [x] is initialized with 0

@@ -2,7 +2,7 @@
 
 namespace App\Ecommerce;
 
-use App\Tools\Math;
+use App\Tools\MathFactoryInterface;
 
 class Cart implements CartInterface
 {
@@ -12,15 +12,19 @@ class Cart implements CartInterface
     /** @var ShippingInterface[] */
     private $shipping;
 
-    public function __construct(array $products)
+    /** @var MathFactoryInterface  */
+    private $mathFactory;
+
+    public function __construct(array $products, MathFactoryInterface $mathFactory, ShippingInterface $shipping)
     {
         $this->products = $products;
-        $this->shipping = new Shipping();
+        $this->mathFactory = $mathFactory;
+        $this->shipping = $shipping;
     }
 
     public function getProductCartPrice(): float
     {
-        $math = new Math();
+        $math = $this->mathFactory->getInstance();
         foreach ($this->products as $product) {
             $math->sum($product->getPrice());
         }
